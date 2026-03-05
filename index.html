@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Harsvalli Weds Rama Seshu</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+/* -------- GLOBAL -------- */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+color:white;
+height:400vh;
+
+background-image:
+linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)),
+url("temple.jpg");
+
+background-size:cover;
+background-repeat:no-repeat;
+background-position:top center;
+
+transition:background-position 0.1s linear;
+
+overflow-x:hidden;
+
+}
+
+/* -------- HERO -------- */
+
+.hero{
+
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+}
+
+/* Golden glowing names */
+
+.names{
+
+font-family:'Cinzel',serif;
+font-size:75px;
+letter-spacing:6px;
+
+background:linear-gradient(45deg,#ffd700,#fff3a0,#ffd700);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+text-shadow:
+0 0 10px rgba(255,215,0,0.7),
+0 0 20px rgba(255,215,0,0.6),
+0 0 40px rgba(255,215,0,0.5);
+
+animation:glow 3s infinite alternate;
+
+}
+
+@keyframes glow{
+
+from{
+text-shadow:0 0 10px gold;
+}
+
+to{
+text-shadow:0 0 30px gold;
+}
+
+}
+
+.date{
+
+margin-top:20px;
+font-size:24px;
+
+}
+
+.location{
+
+margin-top:10px;
+font-size:18px;
+
+}
+
+/* -------- COUNTDOWN -------- */
+
+.countdown{
+
+margin-top:40px;
+font-size:22px;
+letter-spacing:2px;
+
+}
+
+/* -------- SECTIONS -------- */
+
+.section{
+
+padding:120px 20px;
+text-align:center;
+
+}
+
+.section h2{
+
+font-family:'Cinzel',serif;
+font-size:40px;
+margin-bottom:40px;
+
+}
+
+/* -------- EVENTS -------- */
+
+.events{
+
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+
+}
+
+.event-box{
+
+background:rgba(255,255,255,0.15);
+padding:30px;
+border-radius:10px;
+width:200px;
+transition:0.4s;
+
+}
+
+.event-box:hover{
+
+transform:translateY(-10px);
+background:rgba(255,255,255,0.25);
+
+}
+
+/* -------- RELATIVES -------- */
+
+.relatives-list{
+
+font-size:20px;
+line-height:35px;
+
+}
+
+/* Highlighted Names */
+
+.highlight{
+
+font-size:24px;
+font-weight:bold;
+color:#ffd700;
+
+text-shadow:
+0 0 10px rgba(255,215,0,0.9),
+0 0 20px rgba(255,215,0,0.7),
+0 0 40px rgba(255,215,0,0.5);
+
+backdrop-filter:blur(3px);
+padding:3px 8px;
+border-radius:6px;
+
+}
+
+/* -------- MAP BUTTON -------- */
+
+.map-btn{
+
+display:inline-block;
+margin-top:25px;
+padding:12px 30px;
+background:#ffd700;
+color:black;
+font-weight:bold;
+text-decoration:none;
+border-radius:6px;
+
+}
+
+.map-btn:hover{
+
+background:white;
+
+}
+
+/* -------- FLOWER PETALS -------- */
+
+.petal{
+
+position:fixed;
+top:-10px;
+font-size:20px;
+animation:fall linear infinite;
+
+}
+
+@keyframes fall{
+
+to{
+transform:translateY(110vh) rotate(360deg);
+}
+
+}
+
+/* -------- FOOTER -------- */
+
+.footer{
+
+padding:40px;
+text-align:center;
+font-size:14px;
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="names">
+Harsha Valli <br> weds <br> Rama Seshu
+</div>
+
+<div class="date">
+March 11, 2026
+</div>
+
+<div class="location">
+Bhimavaram
+</div>
+
+<div class="countdown" id="countdown">
+Loading countdown...
+</div>
+
+</section>
+
+
+<!-- INVITED BY -->
+
+<section class="section">
+
+<h2>Invited By</h2>
+
+<div class="relatives-list">
+
+<span class="highlight">G. Ramanjenyulu - Smt. Venkata Durga Bhavani</span><br>
+G. Rama Rao (Late) - Saraswathi<br>
+Grandhi Satyanarayana (Late) - Padmavathi<br><br>
+
+Kunisetty Rambabu - Smt. Venkata Naga Lakshmi<br>
+Gannabathula Veera Venkata Satyanarayana - Smt. Vijaya Santhi<br>
+Grandhi Santhosh Kumar - Smt. chamundeshwari<br>
+Gannabathula Sai & Brothers
+
+</div>
+
+</section>
+
+
+<!-- EVENTS -->
+
+<section class="section">
+
+<h2>Wedding Events</h2>
+
+<div class="events">
+
+<div class="event-box">Bride Ceremony<br>March 8</div>
+<div class="event-box">Haldi<br>March 9</div>
+<div class="event-box">Sangeet<br>March 10</div>
+<div class="event-box">Pre Reception<br>March 11</div>
+<div class="event-box">Marriage<br>March 11</div>
+
+</div>
+
+</section>
+
+
+<!-- LOCATION -->
+
+<section class="section">
+
+<h2>Wedding Venue</h2>
+
+<p>
+
+Nirmala Devi Function Hall<br>
+Bhimavaram
+
+</p>
+
+<a class="map-btn"
+href="https://www.google.com/maps/search/Nirmala+Devi+Function+Hall+Bhimavaram"
+target="_blank">
+
+Open Google Maps
+
+</a>
+
+</section>
+
+
+<div class="footer">
+We request the honor of your presence.
+</div>
+
+
+<script>
+
+/* BACKGROUND SCROLL EFFECT */
+
+window.addEventListener("scroll",function(){
+
+let scrollPosition = window.scrollY;
+
+let maxScroll = document.body.scrollHeight - window.innerHeight;
+
+let scrollPercent = scrollPosition / maxScroll;
+
+document.body.style.backgroundPosition =
+"center " + (scrollPercent * 100) + "%";
+
+});
+
+
+/* COUNTDOWN TIMER */
+
+let weddingDate = new Date("March 11, 2026 00:00:00").getTime();
+
+setInterval(function(){
+
+let now = new Date().getTime();
+
+let distance = weddingDate - now;
+
+let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+let hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+let minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+
+document.getElementById("countdown").innerHTML =
+days + " Days " + hours + " Hours " + minutes + " Minutes";
+
+},1000);
+
+
+/* FLOWER PETALS */
+
+function createPetal(){
+
+let petal = document.createElement("div");
+
+petal.classList.add("petal");
+
+petal.innerHTML="🌸";
+
+petal.style.left=Math.random()*100+"vw";
+petal.style.animationDuration=(3+Math.random()*5)+"s";
+
+document.body.appendChild(petal);
+
+setTimeout(()=>{
+petal.remove();
+},8000);
+
+}
+
+setInterval(createPetal,500);
+
+</script>
+
+</body>
+</html>
